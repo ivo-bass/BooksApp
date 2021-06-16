@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Model Forms Demo</title>
+</head>
+<body style="background-color:lightgray;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+      <a class=" navbar-brand text-light mt-2 ml-2" href="{% url 'index' %}">Home</a>
+
+      <a class="text-light btn btn-success mt-2 ml-2" href="{% url 'create' %}">Create new Book</a>
+
+    </nav>
+
+    {% block body %}
+      If you see this text, something is wrong  
+    {% endblock body %}
+</body>
+</html>
+
